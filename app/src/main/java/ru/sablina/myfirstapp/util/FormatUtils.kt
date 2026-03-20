@@ -2,8 +2,8 @@ package ru.sablina.myfirstapp.util
 
 import java.text.DecimalFormat
 
-class FormatUtils {
-    private fun formatCount(count: Int): String {
+object FormatUtils {
+    fun formatCount(count: Int): String {
         val decimalFormat = DecimalFormat("0.#")
         return when {
             count >= 1_000_000 -> {
